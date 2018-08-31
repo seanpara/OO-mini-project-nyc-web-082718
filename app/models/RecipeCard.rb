@@ -1,6 +1,5 @@
 require_relative "User"
-require_relative "Recipe"
-require "pry"
+
 
 class RecipeCard
 

@@ -19,4 +19,8 @@ class Ingredient
     #
   end
 
+  def allergens
+    Allergen.all.select { |ag| ag.ingredient == self }
+  end
+
 end

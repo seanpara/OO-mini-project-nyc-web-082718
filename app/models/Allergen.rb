@@ -1,6 +1,5 @@
-require_relative "Ingredient"
-require_relative "User"
 require "pry"
+
 
 class Allergen
 

@@ -1,6 +1,5 @@
 require 'pry'
-require_relative 'Ingredient'
-require_relative 'Recipe'
+
 
 class RecipeIngredient
   attr_accessor :recipe, :ingredient
