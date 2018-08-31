@@ -1,6 +1,3 @@
-require_relative '../config/environment.rb'
-
-
 i1 = Ingredient.new("Fish")
 r1 = Recipe.new("fish sticks")
 r2 = Recipe.new("beef wellington")
@@ -28,7 +25,7 @@ i6 = Ingredient.new("whiskey")
 
 
 ag1 = Allergen.new(u1, i1)
-ag2 = Allergen.new(u4, i1)
+ag2 = Allergen.new(u5, i1)
 ag3 = Allergen.new(u1, i5)
 ag4 = Allergen.new(u2, i1)
 ag5 = Allergen.new(u3, i1)
@@ -36,10 +33,8 @@ ag5 = Allergen.new(u4, i1)
 
 
 ri1 = RecipeIngredient.new(r1, i1)
-ri2 = RecipeIngredient.new(r2, i3)
-ri3 = RecipeIngredient.new(r3, i6)
-ri4 = RecipeIngredient.new(r1, i3)
-ri5 = RecipeIngredient.new(r1, i5)
-ri6 = RecipeIngredient.new(r4, i6)
-
-binding.pry
+ri1 = RecipeIngredient.new(r1, i1)
+ri1 = RecipeIngredient.new(r1, i1)
+ri1 = RecipeIngredient.new(r1, i1)
+ri1 = RecipeIngredient.new(r1, i1)
+ri1 = RecipeIngredient.new(r1, i1)
