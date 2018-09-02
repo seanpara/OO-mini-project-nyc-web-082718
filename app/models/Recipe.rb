@@ -19,6 +19,11 @@ class Recipe
   def self.most_popular
     #Take RecipeCard.all and count the number of users per recipe
     #Return the recipe with the most users
+    # names = RecipeCard.all.map {|rc| rc.user}
+    # counts = Hash.new(0)
+    # names.each {|name| counts[name] += 1}
+    
+
   end
 
   def users
@@ -35,9 +40,7 @@ class Recipe
   end
 
   def allergens
-    ingredients.select { |ag| ag.recipe == self }.map do |ag|
-      ag.allergen
-    end
+    self.ingredients.select {|i| i.allergens}
   end
 
 end

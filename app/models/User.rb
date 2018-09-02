@@ -40,4 +40,8 @@ class User
     RecipeCard.all.sort_by! {|rc| rc.rating}.reverse.slice(0,3)
   end
 
+  def most_recent_recipe
+    RecipeCard.all.select {|rc| rc.user == self}.map {|rc| rc.recipe}.pop
+  end
+
 end

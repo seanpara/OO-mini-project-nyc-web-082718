@@ -1,7 +1,6 @@
 require_relative '../config/environment.rb'
 
 
-i1 = Ingredient.new("Fish")
 r1 = Recipe.new("fish sticks")
 r2 = Recipe.new("beef wellington")
 r3 = Recipe.new("apple pie")
@@ -24,13 +23,13 @@ rc5 = RecipeCard.new(u4, r3, 3,"2/28")
 rc6 = RecipeCard.new(u4, r2, 2,"5/27")
 rc7 = RecipeCard.new(u1, r5, 10,"5/12")
 
-
-i1 = Ingredient.new("bread crumbs")
-i2 = Ingredient.new("flour")
-i3 = Ingredient.new("steak")
-i4 = Ingredient.new("butter")
-i5 = Ingredient.new("apples")
-i6 = Ingredient.new("whiskey")
+i1 = Ingredient.new("Fish")
+i2 = Ingredient.new("bread crumbs")
+i3 = Ingredient.new("flour")
+i4 = Ingredient.new("steak")
+i5 = Ingredient.new("butter")
+i6 = Ingredient.new("apples")
+i7 = Ingredient.new("whiskey")
 
 
 ag1 = Allergen.new(u1, i1)
