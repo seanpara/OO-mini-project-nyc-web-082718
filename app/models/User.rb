@@ -36,7 +36,6 @@ class User
   end
 
   def top_three_recipes
-    #go into the recipe cards, take those recipe card's ratings, and sort, reverse, and rank them
     RecipeCard.all.sort_by! {|rc| rc.rating}.reverse.slice(0,3)
   end
 

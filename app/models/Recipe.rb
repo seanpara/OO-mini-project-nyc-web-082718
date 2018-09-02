@@ -22,7 +22,7 @@ class Recipe
     # names = RecipeCard.all.map {|rc| rc.user}
     # counts = Hash.new(0)
     # names.each {|name| counts[name] += 1}
-    
+
 
   end
 
@@ -41,6 +41,12 @@ class Recipe
 
   def allergens
     self.ingredients.select {|i| i.allergens}
+  end
+
+  def add_ingredients(ingredients)
+    #should take an array of ingredient instances as an argument, and associate each of those ingredients with this recipe
+    RecipeIngredient.new(self, ingredients)
+
   end
 
 end

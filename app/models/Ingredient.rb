@@ -16,8 +16,8 @@ class Ingredient
   end
 
   def self.most_common_allergen
-    #
-    Allergen.all 
+    #should return the ingredient instance that the highest number of users are allergic to
+    Allergen.all.count {|allergen| allergen.ingredient}
   end
 
   def allergens
