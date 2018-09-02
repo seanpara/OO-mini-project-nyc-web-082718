@@ -36,7 +36,9 @@ class User
   end
 
   def top_three_recipes
-    RecipeCard.all.sort_by! {|rc| rc.rating}.reverse.slice(0,3)
+    RecipeCard.all.sort_by {|rc| rc.rating}.reverse.slice(0,3).map {|rc| rc.recipe}
+    #should return the top three highest rated recipes for this user.
+    #binding.pry
   end
 
   def most_recent_recipe
