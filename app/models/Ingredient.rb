@@ -16,8 +16,14 @@ class Ingredient
   end
 
   def self.most_common_allergen
-    #should return the ingredient instance that the highest number of users are allergic to
-    Allergen.all.count {|allergen| allergen.ingredient}
+    allergen_count = Hash.new(0)
+
+    ingredients_array = Allergen.all.map {|allergen| allergen.ingredient}
+
+    ingredients_array.each { |ingredient| allergen_count[ingredient] += 1}
+
+    allergen_count.key(allergen_count.values.max)
+
   end
 
   def allergens

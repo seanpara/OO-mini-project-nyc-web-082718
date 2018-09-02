@@ -14,6 +14,11 @@ u1 = User.new("Johrten")
 u2 = User.new("Sean")
 u3 = User.new("Mike")
 u4 = User.new("Brooke")
+u5 = User.new("Bill")
+u6 = User.new("Thom")
+u7 = User.new("Ed")
+u8 = User.new("Jonny")
+
 
 rc1 = RecipeCard.new(u1, r1, 1,"8/31")
 rc2 = RecipeCard.new(u2, r1, 5,"7/31")
@@ -37,7 +42,10 @@ ag2 = Allergen.new(u4, i1)
 ag3 = Allergen.new(u1, i5)
 ag4 = Allergen.new(u2, i2)
 ag5 = Allergen.new(u3, i4)
-ag5 = Allergen.new(u4, i2)
+ag6 = Allergen.new(u5, i2)
+ag7 = Allergen.new(u6, i2)
+ag8 = Allergen.new(u7, i2)
+
 
 
 ri1 = RecipeIngredient.new(r1, i1)

@@ -17,12 +17,14 @@ class Recipe
   end
 
   def self.most_popular
-    #Take RecipeCard.all and count the number of users per recipe
-    #Return the recipe with the most users
-    # names = RecipeCard.all.map {|rc| rc.user}
-    # counts = Hash.new(0)
-    # names.each {|name| counts[name] += 1}
 
+    recipe_count = Hash.new(0)
+
+    recipe_array = RecipeCard.all.map {|rc| rc.recipe}
+
+    recipe_array.each { |recipe| recipe_count[recipe] += 1}
+
+    recipe_count.key(recipe_count.values.max)
 
   end
 
